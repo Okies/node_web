@@ -6,10 +6,10 @@
 
     <body>
         <form id="screen_start">
-            <input id="input_name" placeholder="이름 입력" />
+            <input id="input_name" placeholder="이름 입력" autocomplete="off"/>
             <button id="start">시작</button>
         </form>
-        
+
         <div id="screen_main">
             <div id="hero_stat">
                 <span id="hero_name"></span>
@@ -18,23 +18,23 @@
                 <span id="hero_xp"></span>
                 <span id="hero_atk"></span>
             </div>
-            
+
             <form id="menu_game" style="display: none">
                 <div id="menu_1">1. 모험</div>
                 <div id="menu_2">2. 휴식</div>
                 <div id="menu_3">3. 종료</div>
-                <input id="input_menu" />
+                <input id="input_menu" autocomplete="off"/>
                 <button id="button_menu">입력</button>
             </form>
-            
+
             <form id="menu_battle" style="display: none">
                 <div id="battle_1">1. 공격</div>
                 <div id="battle_2">2. 회복</div>
                 <div id="battle_3">3. 도주</div>
-                <input id="input_battle" />
+                <input id="input_battle" autocomplete="off"/>
                 <button id="button_battle">입력</button>
             </form>
-            
+
             <div id="message"></div>
             <div id="monster_stat">
                 <span id="monster_name"></span>
@@ -42,7 +42,7 @@
                 <span id="monster_atk"></span>
             </div>
         </div>
-    
+
         <script src="/script/textRPG.js"></script>
     </body>
 </html>
