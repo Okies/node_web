@@ -2,6 +2,7 @@ var express = require('express');
 
 var index = require('./routes/index');
 var textRPG = require('./routes/textRPG');
+var stream = require('./routes/stream');
 
 var app = express();
 
@@ -13,6 +14,7 @@ app.use('/script', express.static(__dirname + '/script'));
 
 app.use('/', index);
 app.use('/textRPG', textRPG);
+app.use('/stream', stream);
 
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
