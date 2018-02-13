@@ -229,10 +229,9 @@ document.getElementById('menu_game').onsubmit = function(e) {
   Game.getinstance().menuInput(option);
 }
 
-document.getElementById('menu_battle').onsubmit = function(e) {
+t.getElementById('menu_battle').onsubmit = function(e) {
   var input = document.getElementById('input_battle');
   var option = input.value;
   e.preventDefault();
   input.value = '';
-  Game.getinstance().battleInput(option);
-}
+  Game.getinstance().battleInput(option);}
