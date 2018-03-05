@@ -6,5 +6,8 @@
 
     <body>
         <h1>Streaming Page</h1>
+        <% for(i = 0; i < files.length; i++) {%>
+          <p><a href=<%= '/stream' + files[i].dir %>> <%= files[i].name %> </a></p>
+        <% } %>
     </body>
 </html>
