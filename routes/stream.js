@@ -16,7 +16,7 @@ function makeStat(rpath, file) {
     name : file,
     type : type,
     size : size,
-    dir : dir
+    dir : encodeURI(dir)
   }
 }
 
@@ -28,6 +28,8 @@ router.get('/*', function(req, res) {
   //console.log('cwd : ' + process.cwd()); //경로
 
   var req_url = decodeURI(req.url);
+
+  console.log("req url : " + req.connection.remoteAddress);
   var real_path = '';
 
   if(req_url == '/') {
